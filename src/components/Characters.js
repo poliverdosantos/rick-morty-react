@@ -1,6 +1,8 @@
-export default function characters()
-{
-    <div>
-        <h1>Desde characters JS</h1>        
-    </div>
+export default function characters(props)
+{ 
+    return(
+        <div>
+            <h4>Desde characters</h4>            
+        </div>
+    );
 }
