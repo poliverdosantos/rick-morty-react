@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import imagenRickMorty from './img/rick-morty.png';
-
+import Characters from './components/Characters';
 
 
 function App() {
@@ -15,12 +15,15 @@ function App() {
     const characterApi = await api.json();
 
     setCharacters(characterApi.results);
+
+
   };
 
     return (
     <div className="App">
       <header className="App-header">
        <h1 className="title"> Rick & Morty </h1>
+       <Characters/>
        <img src = {imagenRickMorty} alt="Rick & Morty" className='imgRickMorty'/>
        <button onClick={reqApi} className="btn-search">Buscar Personaje</button>
       </header>
